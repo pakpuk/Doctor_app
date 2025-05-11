@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:medical_app/features/ui/Widgets/Icon_and_text_widget.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -17,7 +18,10 @@ class OnboardingScreen extends StatelessWidget {
             ),
             child: Column(
               children: [
-                
+                OnboIconAndTextWidget(),
+                SizedBox(
+                  height: 16.h,
+                )
               ],
             ),
           ),
