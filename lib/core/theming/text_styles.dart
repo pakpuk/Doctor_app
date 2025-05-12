@@ -9,15 +9,15 @@ class TextStyles {
     color: ColorsManager.blackcolor,
   );
 
-  static TextStyle heading2 = TextStyle(
-    fontSize: 24,
+  static TextStyle Blue32fontWeight = TextStyle(
+    fontSize: 32.sp,
     fontWeight: FontWeight.w600,
-    color: ColorsManager.blackcolor,
+    color: ColorsManager.primary,
   );
 
-  static TextStyle bodyText = TextStyle(
-    fontSize: 16.sp,
+  static TextStyle smallText = TextStyle(
+    fontSize: 13.sp,
     fontWeight: FontWeight.w400,
-    color: ColorsManager.blackcolor,
+    color: ColorsManager.greycolor,
   );
 }

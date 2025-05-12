@@ -4,7 +4,8 @@ import 'package:medical_app/features/ui/Screens/LoginScreen.dart';
 import 'package:medical_app/features/ui/Screens/onboaardingscren.dart';
 
 class AppRouter {
- static Route generateRoute(RouteSettings settings) {
+  static Route generateRoute(RouteSettings settings) {
+    final arguments = settings.arguments;
     switch (settings.name) {
       case Routes.onboardingScreen:
         return MaterialPageRoute(builder: (_) => const OnboardingScreen());
