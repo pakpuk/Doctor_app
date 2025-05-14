@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:medical_app/core/theming/Colors.dart';
+import 'package:medical_app/core/theming/constaints.dart';
 
 class ButtonWidget extends StatelessWidget {
   const ButtonWidget({super.key});
@@ -19,7 +20,7 @@ class ButtonWidget extends StatelessWidget {
           ),
         ),
         child: Text(
-          "Get Started",
+          Constaints.Getstartedbuton,
           style: TextStyle(fontSize: 18.sp, color: Colors.white),
         ),
       ),

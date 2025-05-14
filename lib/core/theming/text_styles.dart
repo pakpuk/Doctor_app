@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:medical_app/core/theming/Colors.dart';
+import 'package:medical_app/core/theming/font_weight_helper.dart';
 
 class TextStyles {
   static TextStyle heading1 = TextStyle(
     fontSize: 24.sp,
     fontWeight: FontWeight.w700,
     color: ColorsManager.blackcolor,
+  );
+
+  static TextStyle font24boldprimary = TextStyle(
+    fontSize: 24.sp,
+    fontWeight: FontWeightHelper.bold,
+    color: ColorsManager.primary,
   );
 
   static TextStyle Blue32fontWeight = TextStyle(
@@ -17,7 +24,7 @@ class TextStyles {
 
   static TextStyle smallText = TextStyle(
     fontSize: 13.sp,
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeightHelper.normal,
     color: ColorsManager.greycolor,
   );
 }

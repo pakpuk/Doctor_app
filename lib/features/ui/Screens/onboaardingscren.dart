@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import 'package:medical_app/core/theming/constaints.dart';
 import 'package:medical_app/core/theming/text_styles.dart';
 import 'package:medical_app/features/ui/Widgets/Icon_and_text_widget.dart';
 import 'package:medical_app/features/ui/Widgets/button_widget.dart';
@@ -35,7 +35,7 @@ class OnboardingScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       Text(
-                        "Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.",
+                        Constaints.smltxtstart,
                         style: TextStyles.smallText,
                       ),
                       SizedBox(
