@@ -2,9 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:medical_app/core/theming/constaints.dart';
 import 'package:medical_app/core/theming/text_styles.dart';
+import 'package:medical_app/features/ui/Widgets/text_fiel_widget.dart';
 
-class loginScreen extends StatelessWidget {
-  const loginScreen({super.key});
+class loginScreen extends StatefulWidget {
+  loginScreen({super.key});
+
+  @override
+  State<loginScreen> createState() => _loginScreenState();
+}
+
+class _loginScreenState extends State<loginScreen> {
+  final formkey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +37,15 @@ class loginScreen extends StatelessWidget {
                 SizedBox(
                   height: 30.h,
                 ),
-                TextFormField(),
+                Form(
+                    key: formkey,
+                    child: Column(
+                      children: [
+                        TextFielWidget(
+                          hintText: 'Email',
+                        ),
+                      ],
+                    ))
               ],
             ),
           ),

@@ -6,7 +6,7 @@ import 'package:medical_app/core/theming/font_weight_helper.dart';
 class TextStyles {
   static TextStyle heading1 = TextStyle(
     fontSize: 24.sp,
-    fontWeight: FontWeight.w700,
+    fontWeight: FontWeightHelper.bold,
     color: ColorsManager.blackcolor,
   );
 
@@ -18,7 +18,7 @@ class TextStyles {
 
   static TextStyle Blue32fontWeight = TextStyle(
     fontSize: 32.sp,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeightHelper.semibold,
     color: ColorsManager.primary,
   );
 
@@ -26,5 +26,16 @@ class TextStyles {
     fontSize: 13.sp,
     fontWeight: FontWeightHelper.normal,
     color: ColorsManager.greycolor,
+  );
+  static TextStyle hinttextfield = TextStyle(
+    fontSize: 13.sp,
+    fontWeight: FontWeightHelper.normal,
+    color: ColorsManager.textlightgrey,
+  );
+
+  static TextStyle font14darbluemiduim = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeightHelper.medium,
+    color: ColorsManager.darkblue,
   );
 }
