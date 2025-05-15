@@ -4,23 +4,34 @@ import 'package:medical_app/core/theming/Colors.dart';
 import 'package:medical_app/core/theming/constaints.dart';
 
 class ButtonWidget extends StatelessWidget {
-  const ButtonWidget({super.key});
+  final String? title;
+  final VoidCallback onTap;
+  final BorderRadius? borderRadius;
+  final double? width;
+  final double? height;
+  ButtonWidget(
+      {super.key,
+      this.title,
+      required this.onTap,
+      this.width,
+      this.height,
+      this.borderRadius});
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: double.infinity,
-      height: 50.h,
+      width: width ?? double.infinity,
+      height: height ?? 50.h,
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: onTap,
         style: ElevatedButton.styleFrom(
           backgroundColor: ColorsManager.primary,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(30.r),
+            borderRadius: BorderRadius.circular(16.r),
           ),
         ),
         child: Text(
-          Constaints.Getstartedbuton,
+          title ?? Constaints.Getstartedbuton,
           style: TextStyle(fontSize: 18.sp, color: Colors.white),
         ),
       ),

@@ -12,6 +12,7 @@ class TextFielWidget extends StatelessWidget {
   final TextStyle? inputTextStyle;
   final OutlineInputBorder? focusedBorder;
   final OutlineInputBorder? enabledBorder;
+  final Color? backgroundColor;
   const TextFielWidget(
       {super.key,
       required this.hintText,
@@ -21,7 +22,8 @@ class TextFielWidget extends StatelessWidget {
       this.focusedBorder,
       this.enabledBorder,
       this.suffixIcon,
-      this.isobscureText});
+      this.isobscureText,
+      this.backgroundColor});
 
   @override
   Widget build(BuildContext context) {
@@ -29,6 +31,8 @@ class TextFielWidget extends StatelessWidget {
       style: TextStyles.font14darbluemiduim,
       obscureText: isobscureText ?? false,
       decoration: InputDecoration(
+        filled: true,
+        fillColor: backgroundColor ?? ColorsManager.textfieldcolor,
         suffixIcon: suffixIcon,
         hintStyle: hintStyle ?? TextStyles.hinttextfield,
         hintText: hintText,

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:medical_app/core/theming/Colors.dart';
 import 'package:medical_app/core/theming/constaints.dart';
 import 'package:medical_app/core/theming/text_styles.dart';
+import 'package:medical_app/features/ui/Widgets/button_widget.dart';
 import 'package:medical_app/features/ui/Widgets/text_fiel_widget.dart';
 
 class loginScreen extends StatefulWidget {
@@ -13,6 +15,7 @@ class loginScreen extends StatefulWidget {
 
 class _loginScreenState extends State<loginScreen> {
   final formkey = GlobalKey<FormState>();
+  bool isobscureText = true;
 
   @override
   Widget build(BuildContext context) {
@@ -42,8 +45,43 @@ class _loginScreenState extends State<loginScreen> {
                     child: Column(
                       children: [
                         TextFielWidget(
-                          hintText: 'Email',
+                          hintText: Constaints.emailhint,
                         ),
+                        SizedBox(
+                          height: 16.h,
+                        ),
+                        TextFielWidget(
+                          hintText: Constaints.passwordhint,
+                          isobscureText: isobscureText,
+                          suffixIcon: GestureDetector(
+                            onTap: () => setState(() {
+                              isobscureText = !isobscureText;
+                            }),
+                            child: Icon(
+                              Icons.visibility_off,
+                              color: ColorsManager.greycolor,
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8.h,
+                        ),
+                        Align(
+                          alignment: Alignment.centerRight,
+                          child: Text(
+                            Constaints.forgetpassword,
+                            style: TextStyles.smallText.copyWith(
+                              color: ColorsManager.primary,
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 40.h,
+                        ),
+                        ButtonWidget(
+                          title: Constaints.login,
+                          onTap: () {},
+                        )
                       ],
                     ))
               ],
