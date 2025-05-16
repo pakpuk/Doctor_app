@@ -9,4 +9,11 @@ class Constaints {
   static const String emailhint = 'Email';
   static const String passwordhint = 'Password';
   static const String forgetpassword = 'Forget Password?';
+  static const String login = 'Login';
+  static const String signup = 'Sign Up';
+  static const String Hellomsg = '✨ Join the Journey';
+  static const String signupmsg =
+      "Create your account and unlock a world of possibilities Connect explore and experience something made just for you. 🛡️ It only takes a few seconds Your info stays safe with us";
+  static const String fullnamehint = 'Full Name';
+  static const String confirmpasswordhint = ' Confrim password';
 }
