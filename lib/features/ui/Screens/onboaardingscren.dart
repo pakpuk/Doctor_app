@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:medical_app/core/helper/extensions.dart';
+import 'package:medical_app/core/routing/routes.dart';
 import 'package:medical_app/core/theming/constaints.dart';
 import 'package:medical_app/core/theming/text_styles.dart';
+
 import 'package:medical_app/features/ui/Widgets/Icon_and_text_widget.dart';
 import 'package:medical_app/features/ui/Widgets/button_widget.dart';
 import 'package:medical_app/features/ui/Widgets/text_image_widget.dart';
@@ -42,7 +45,9 @@ class OnboardingScreen extends StatelessWidget {
                         height: 30.h,
                       ),
                       ButtonWidget(
-                        onTap: () {},
+                        onTap: () {
+                          context.pushNamed(Routes.loginScreen);
+                        },
                       ),
                     ],
                   ),

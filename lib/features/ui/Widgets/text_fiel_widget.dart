@@ -28,7 +28,7 @@ class TextFielWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      style: TextStyles.font14darbluemiduim,
+      style: TextStyles.font13darkluemiduim,
       obscureText: isobscureText ?? false,
       decoration: InputDecoration(
         filled: true,

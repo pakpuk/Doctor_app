@@ -3,7 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:medical_app/core/theming/Colors.dart';
 import 'package:medical_app/core/theming/constaints.dart';
 import 'package:medical_app/core/theming/text_styles.dart';
+import 'package:medical_app/features/ui/Widgets/Already_haveaccount_widget.dart';
 import 'package:medical_app/features/ui/Widgets/button_widget.dart';
+import 'package:medical_app/features/ui/Widgets/terms_conditions_widget.dart';
 import 'package:medical_app/features/ui/Widgets/text_fiel_widget.dart';
 
 class loginScreen extends StatefulWidget {
@@ -81,7 +83,15 @@ class _loginScreenState extends State<loginScreen> {
                         ButtonWidget(
                           title: Constaints.login,
                           onTap: () {},
-                        )
+                        ),
+                        SizedBox(
+                          height: 16.h,
+                        ),
+                        TermsConditionsWidget(),
+                        SizedBox(
+                          height: 30,
+                        ),
+                        AlreadyHaveaccountWidget()
                       ],
                     ))
               ],

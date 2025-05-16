@@ -33,9 +33,23 @@ class TextStyles {
     color: ColorsManager.textlightgrey,
   );
 
-  static TextStyle font14darbluemiduim = TextStyle(
-    fontSize: 14.sp,
+  static TextStyle font13darkluemiduim = TextStyle(
+    fontSize: 13.sp,
     fontWeight: FontWeightHelper.medium,
     color: ColorsManager.darkblue,
   );
+  static TextStyle font13semiboldprimary = TextStyle(
+    fontSize: 13.sp,
+    fontWeight: FontWeightHelper.semibold,
+    color: ColorsManager.primary,
+  );
+  static TextStyle font13darkmiduim = TextStyle(
+    fontSize: 13.sp,
+    fontWeight: FontWeightHelper.medium,
+    color: ColorsManager.darkblue,
+  );
+  static TextStyle font13darkbold = TextStyle(
+      fontSize: 13.sp,
+      fontWeight: FontWeightHelper.bold,
+      color: ColorsManager.blackcolor);
 }
